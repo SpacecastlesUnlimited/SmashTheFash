@@ -4,13 +4,14 @@ using System.Collections.Generic;
 
 public class LevelLoader : MonoBehaviour {
 
-	public string WebPlayerQuitUrl;
-
-	private Stack<string> levels;
+	private Stack<string> levels {
+		get {
+			return Proxy.Current.manager.Levels;
+		}
+	}
 
 	// Use this for initialization
-	void Start () {
-		levels = new Stack<string> ();
+	void Awake () {
 	}
 
 	void Update() {
@@ -24,14 +25,16 @@ public class LevelLoader : MonoBehaviour {
 	}
 	
 	public void GoBackLevel() {
-		if (levels.Count <= 1) {
-#if UNITY_EDITOR
+		var level = levels.Pop(); // current Level
+		if (levels.Count < 1 || level == "Main") {
+			#if UNITY_EDITOR
 			UnityEditor.EditorApplication.isPlaying = false;
-#else
+			#else
 			Application.Quit ();
-#endif
+			#endif
+		} else {
+			level = levels.Peek(); // previous Level
+			Application.LoadLevel (level);
 		}
-		else
-			Application.LoadLevel (levels.Pop());
 	}
 }

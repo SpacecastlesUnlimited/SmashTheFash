@@ -28,10 +28,10 @@ public class Proxy : MonoBehaviour {
 		current = this;
 		instantiated = GameObject.FindWithTag ("GameController");
 		if (instantiated == null) {
-			loader.LoadLevel("Main");
 			instantiated = (GameObject)Instantiate(prefab, transform.position, transform.rotation);
 			instantiated.name = prefab.name;
 			DontDestroyOnLoad(instantiated);
+			loader.LoadLevel("Main");
 		}
 	}
 	
