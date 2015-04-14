@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FashSpawner : MonoBehaviour {
+public class EntitySpawner : MonoBehaviour {
 
-	public GameObject Fash;
+	public GameObject Entity;
 	public Transform Target;
 	public Transform SpawnPoint;
 	public float SpawnEvery;
@@ -15,10 +15,10 @@ public class FashSpawner : MonoBehaviour {
 	private float SpawnInterval;
 
 	public void Spawn() {
-		var newFash = (GameObject)Instantiate (Fash,SpawnPoint.position, SpawnPoint.rotation);
-		newFash.name = Fash.name;
-		newFash.transform.parent = transform;
-		newFash.GetComponent<FashNavigation> ().target = Target;
+		var newEntity = (GameObject)Instantiate (Entity,SpawnPoint.position, SpawnPoint.rotation);
+		newEntity.name = Entity.name;
+		newEntity.transform.parent = transform;
+		newEntity.GetComponent<FashNavigation> ().target = Target;
 	}
 
 	// Use this for initialization

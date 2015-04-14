@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b4273acf9dbd540a3627dcc4508039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fash: {fileID: 195362, guid: ffc99322c0e02b24689e136e85c05f70, type: 2}
+  Entity: {fileID: 195362, guid: ffc99322c0e02b24689e136e85c05f70, type: 2}
   Target: {fileID: 0}
   SpawnPoint: {fileID: 497796}
   SpawnEvery: 22
