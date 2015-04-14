@@ -33,6 +33,7 @@ public class Proxy : MonoBehaviour {
 			DontDestroyOnLoad(instantiated);
 			loader.LoadLevel("Main");
 		}
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 	}
 	
 	// Update is called once per frame
