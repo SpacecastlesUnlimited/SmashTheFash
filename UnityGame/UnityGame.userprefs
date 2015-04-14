@@ -1,15 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Entities\Scripts\Place.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Entities\Scripts\CountFashists.cs">
     <Files>
-      <File FileName="Assets\Entities\Scripts\FashSpawner.cs" Line="36" Column="42" />
+      <File FileName="Assets\Entities\Scripts\FashSpawner.cs" Line="8" Column="18" />
       <File FileName="Assets\Globals\Scripts\Proxy.cs" Line="1" Column="1" />
       <File FileName="Assets\Globals\Scripts\GameController.cs" Line="1" Column="1" />
       <File FileName="Assets\Globals\Scripts\LevelLoader.cs" Line="1" Column="1" />
       <File FileName="Assets\Entities\Scripts\FashNavigation.cs" Line="1" Column="1" />
       <File FileName="Assets\Entities\Scripts\MoveAlongPath.cs" Line="1" Column="1" />
       <File FileName="Assets\Entities\Scripts\DontRotate.cs" Line="1" Column="1" />
-      <File FileName="Assets\Entities\Scripts\Place.cs" Line="43" Column="67" />
+      <File FileName="Assets\Entities\Scripts\Place.cs" Line="80" Column="32" />
+      <File FileName="Assets\Entities\Scripts\CountFashists.cs" Line="18" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

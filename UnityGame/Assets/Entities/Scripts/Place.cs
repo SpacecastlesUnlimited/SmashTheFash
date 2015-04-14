@@ -16,6 +16,8 @@ public class Place : MonoBehaviour {
 	public UnityEngine.UI.Text status;
 
 	public GameObject SelectedObject;
+	
+	public GameObject Crosshair;
 
 	private RaycastHit hitInfo;
 	private Vector2 currentPos;
@@ -82,6 +84,10 @@ public class Place : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		Crosshair.SetActive (placing);
+		Crosshair.transform.position = new Vector3 (hitInfo.point.x, 10, hitInfo.point.z);
+
 		status.text = "";
 		if (!placing && Input.GetButtonDown ("Fire1")) {
 			startPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
