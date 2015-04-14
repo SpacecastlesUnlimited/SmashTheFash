@@ -12,7 +12,7 @@ GameObject:
   - 65: {fileID: 6591712}
   - 23: {fileID: 2370810}
   - 208: {fileID: 20802792}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: House
   m_TagString: Building
   m_Icon: {fileID: 0}
