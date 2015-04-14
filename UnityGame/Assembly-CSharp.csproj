@@ -49,7 +49,9 @@
      <Compile Include="Assets\Entities\Scripts\DontRotate.cs" />
      <Compile Include="Assets\Entities\Scripts\EneableOnPlay.cs" />
      <Compile Include="Assets\Entities\Scripts\FashNavigation.cs" />
+     <Compile Include="Assets\Entities\Scripts\FashSpawner.cs" />
      <Compile Include="Assets\Entities\Scripts\MoveAlongPath.cs" />
+     <Compile Include="Assets\Entities\Scripts\Place.cs" />
      <Compile Include="Assets\Globals\Scripts\GameController.cs" />
      <Compile Include="Assets\Globals\Scripts\LevelLoader.cs" />
      <Compile Include="Assets\Globals\Scripts\Proxy.cs" />
