@@ -46,10 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Entities\Scripts\CountCops.cs" />
+     <Compile Include="Assets\Entities\Scripts\CountFashists.cs" />
+     <Compile Include="Assets\Entities\Scripts\CountGoodPeople.cs" />
      <Compile Include="Assets\Entities\Scripts\DontRotate.cs" />
      <Compile Include="Assets\Entities\Scripts\EneableOnPlay.cs" />
      <Compile Include="Assets\Entities\Scripts\EntitySpawner.cs" />
      <Compile Include="Assets\Entities\Scripts\FashNavigation.cs" />
+     <Compile Include="Assets\Entities\Scripts\GoodPeopleNavigation.cs" />
      <Compile Include="Assets\Entities\Scripts\MoveAlongPath.cs" />
      <Compile Include="Assets\Entities\Scripts\Place.cs" />
      <Compile Include="Assets\Entities\Scripts\TurnLeftRight.cs" />
