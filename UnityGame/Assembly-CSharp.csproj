@@ -60,6 +60,7 @@
      <Compile Include="Assets\Globals\Scripts\GameController.cs" />
      <Compile Include="Assets\Globals\Scripts\LevelLoader.cs" />
      <Compile Include="Assets\Globals\Scripts\Proxy.cs" />
+     <Compile Include="Assets\Interface\ShowMenu.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
