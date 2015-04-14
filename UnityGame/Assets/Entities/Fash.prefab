@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be5c88b98dbdb344804710896a9f9c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  left: {fileID: 0}
+  left: {fileID: 21300000, guid: d49f3f69d9daf0f49815052d7bb88c71, type: 3}
   right: {fileID: 21300000, guid: 093cce3c9ff1b8e4a9ce3bee6ac8d182, type: 3}
   image: {fileID: 21212620}
 --- !u!114 &11467128
