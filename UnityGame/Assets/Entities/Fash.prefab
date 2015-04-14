@@ -46,6 +46,7 @@ GameObject:
   - 23: {fileID: 2344066}
   - 195: {fileID: 19563714}
   - 114: {fileID: 11467128}
+  - 114: {fileID: 11457454}
   m_Layer: 0
   m_Name: Fash
   m_TagString: Untagged
@@ -154,6 +155,20 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!114 &11457454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be5c88b98dbdb344804710896a9f9c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: {fileID: 0}
+  right: {fileID: 21300000, guid: 093cce3c9ff1b8e4a9ce3bee6ac8d182, type: 3}
+  image: {fileID: 21212620}
 --- !u!114 &11467128
 MonoBehaviour:
   m_ObjectHideFlags: 1
