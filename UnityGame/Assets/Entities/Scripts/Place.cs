@@ -99,7 +99,7 @@ public class Place : MonoBehaviour {
 			Placing();
 		}
 
-		if (Input.GetButtonUp ("Fire1")) {
+		if (placing && Input.GetButtonUp ("Fire1")) {
 			endPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
 			DonePlacing();
 		}
