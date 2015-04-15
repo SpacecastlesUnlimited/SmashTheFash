@@ -18,7 +18,12 @@ public class EntitySpawner : MonoBehaviour {
 		var newEntity = (GameObject)Instantiate (Entity,SpawnPoint.position, SpawnPoint.rotation);
 		newEntity.name = Entity.name;
 		newEntity.transform.parent = transform;
-		newEntity.GetComponent<FashNavigation> ().target = Target;
+		if (Target != null) {
+			if (newEntity.GetComponent<FashNavigation> () != null)
+				newEntity.GetComponent<FashNavigation> ().target = Target;
+			else 
+				newEntity.GetComponent<GoodPeopleNavigation> ().target = Target;
+		}
 	}
 
 	// Use this for initialization
