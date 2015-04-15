@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Entities\Scripts\CatapultSmash.cs" />
      <Compile Include="Assets\Entities\Scripts\CountCops.cs" />
      <Compile Include="Assets\Entities\Scripts\CountFashists.cs" />
      <Compile Include="Assets\Entities\Scripts\CountGoodPeople.cs" />
