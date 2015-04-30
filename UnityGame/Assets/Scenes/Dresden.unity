@@ -3819,6 +3819,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f742ce8b884754db6dd5a64f4f7c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxPolice: 10
+  maxPoliceVan: 0
+  maxCamera: 5
+  maxCatapult: 2
+  maxActivist: 15
   PolicePrefab: {fileID: 106872, guid: ed758a82c086e2246a7fbcdb8cd631cc, type: 2}
   CameraPrefab: {fileID: 118650, guid: f8e85c865c0170e4e82e64af2f04b3dc, type: 2}
   PoliceVanPrefab: {fileID: 113874, guid: a2ed3f17cf245b446b8139a0d8b17298, type: 2}
@@ -6042,6 +6047,10 @@ Prefab:
       propertyPath: Target
       value: 
       objectReference: {fileID: 1084441787}
+    - target: {fileID: 11476916, guid: 139e3752f8b11324abec4a899874d1c6, type: 2}
+      propertyPath: SpawnEvery
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 139e3752f8b11324abec4a899874d1c6, type: 2}
   m_IsPrefabParent: 0

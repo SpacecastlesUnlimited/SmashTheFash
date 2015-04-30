@@ -3,6 +3,18 @@ using System.Collections;
 
 public class Place : MonoBehaviour {
 
+	public int maxPolice;
+	public int maxPoliceVan;
+	public int maxCamera;
+	public int maxCatapult;
+	public int maxActivist;
+
+	 int currentPolice;
+	 int currentPoliceVan;
+	 int currentCamera;
+	 int currentCatapult;
+	 int currentActivist;
+	
 	public GameObject PolicePrefab;
 	public GameObject CameraPrefab;
 	public GameObject PoliceVanPrefab;
@@ -35,18 +47,35 @@ public class Place : MonoBehaviour {
 	void Start () {
 		placing = false;
 		touching = false;
+		currentPolice = 0;
+		currentPoliceVan = 0;
+		currentCamera = 0;
+		currentCatapult = 0;
+		currentActivist = 0;
 	}
 
 	void DonePlacing() {
 		var mouseMoved = startPos - endPos;
-		if (mouseMoved.x > 0 && mouseMoved.y < 0)
-			PlacePrefab (PolicePrefab, policeParent);
-		if (mouseMoved.x > 0 && mouseMoved.y > 0)
-			PlacePrefab (ActivistPrefab, activistParent);
-		if (mouseMoved.x < 0 && mouseMoved.y > 0)
-			PlacePrefab (CameraPrefab, cameraParent);
-		if (mouseMoved.x < 0 && mouseMoved.y < 0)
-			PlacePrefab (CatapultPrefab, catapultParent);
+		if (mouseMoved.x > 0 && mouseMoved.y < 0){
+			if (currentPolice < maxPolice) 
+				PlacePrefab (PolicePrefab, policeParent);
+			currentPolice++;
+		}
+		if (mouseMoved.x > 0 && mouseMoved.y > 0){
+			if (currentActivist < maxActivist) 
+				PlacePrefab (ActivistPrefab, activistParent);
+			currentActivist++;
+		}
+		if (mouseMoved.x < 0 && mouseMoved.y > 0){
+			if (currentCamera < maxCamera) 
+				PlacePrefab (CameraPrefab, cameraParent);
+			currentCamera++;
+		}
+		if (mouseMoved.x < 0 && mouseMoved.y < 0){
+			if (currentCatapult < maxCatapult) 
+				PlacePrefab (CatapultPrefab, catapultParent);
+			currentCatapult++;
+		}
 		placing = false;
 	}
 
