@@ -23,6 +23,7 @@ public class CatapultSmash : MonoBehaviour {
 			foreach (var f in Fashs){
 				if (CurrentAimAt == null || currentDistance > (transform.position - f.transform.position).magnitude){
 					CurrentAimAt = f.gameObject;
+					currentDistance = (transform.position - f.transform.position).magnitude;
 				}
 			}
 			if (CurrentAimAt != null){

@@ -7,11 +7,14 @@ public class Place : MonoBehaviour {
 	public GameObject CameraPrefab;
 	public GameObject PoliceVanPrefab;
 	public GameObject CatapultPrefab;
+	public GameObject ActivistPrefab;
 
 	public Transform policeParent;
 	public Transform cameraParent;
 	public Transform policeVanParent;
 	public Transform catapultParent;
+	public Transform activistParent;
+
 
 	public UnityEngine.UI.Text status;
 
@@ -39,11 +42,11 @@ public class Place : MonoBehaviour {
 		if (mouseMoved.x > 0 && mouseMoved.y < 0)
 			PlacePrefab (PolicePrefab, policeParent);
 		if (mouseMoved.x > 0 && mouseMoved.y > 0)
-			PlacePrefab (CameraPrefab, cameraParent);
+			PlacePrefab (ActivistPrefab, activistParent);
 		if (mouseMoved.x < 0 && mouseMoved.y > 0)
-			PlacePrefab (CatapultPrefab, policeVanParent);
+			PlacePrefab (CameraPrefab, cameraParent);
 		if (mouseMoved.x < 0 && mouseMoved.y < 0)
-			PlacePrefab (PoliceVanPrefab, catapultParent);
+			PlacePrefab (CatapultPrefab, catapultParent);
 		placing = false;
 	}
 
@@ -53,11 +56,11 @@ public class Place : MonoBehaviour {
 		if (mouseMoved.x > 0 && mouseMoved.y < 0)
 			Text = "Cop";
 		if (mouseMoved.x > 0 && mouseMoved.y > 0)
-			Text = "Media";
+			Text = "Activist";
 		if (mouseMoved.x < 0 && mouseMoved.y > 0)
-			Text = "Catapult";
+			Text = "Media";
 		if (mouseMoved.x < 0 && mouseMoved.y < 0)
-			Text = "Police Van";
+			Text = "Catapult";
 		status.text = Text;
 	}
 

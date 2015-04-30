@@ -2376,7 +2376,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 811c884e488007441bf7f51892142f24, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e506c7ff37fc13469c664ff4c581687, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &607380747
 Prefab:
@@ -3811,10 +3811,12 @@ MonoBehaviour:
   CameraPrefab: {fileID: 118650, guid: f8e85c865c0170e4e82e64af2f04b3dc, type: 2}
   PoliceVanPrefab: {fileID: 113874, guid: a2ed3f17cf245b446b8139a0d8b17298, type: 2}
   CatapultPrefab: {fileID: 132612, guid: fb71f7ee0e3baf642b70cf3d97a094c0, type: 2}
+  ActivistPrefab: {fileID: 121670, guid: 64cb766df09986540ab3f92552882ebb, type: 2}
   policeParent: {fileID: 726188689}
   cameraParent: {fileID: 1760514374}
   policeVanParent: {fileID: 235264664}
   catapultParent: {fileID: 426793185}
+  activistParent: {fileID: 1280509123}
   status: {fileID: 1100583222}
   SelectedObject: {fileID: 0}
   Crosshair: {fileID: 601850498}
