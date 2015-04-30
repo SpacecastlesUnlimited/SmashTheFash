@@ -951,6 +951,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11448852, guid: 64cb766df09986540ab3f92552882ebb, type: 2}
+      propertyPath: FashFather
+      value: 
+      objectReference: {fileID: 370619061}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64cb766df09986540ab3f92552882ebb, type: 2}
   m_IsPrefabParent: 0
@@ -2376,7 +2380,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 811c884e488007441bf7f51892142f24, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e506c7ff37fc13469c664ff4c581687, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &607380747
 Prefab:
@@ -2487,6 +2491,10 @@ Prefab:
       propertyPath: Target
       value: 
       objectReference: {fileID: 242033947}
+    - target: {fileID: 180248, guid: 06d1a1df797a08e4d8e9a6ef12303482, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06d1a1df797a08e4d8e9a6ef12303482, type: 2}
   m_IsPrefabParent: 0
@@ -3465,7 +3473,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 495652, guid: 64cb766df09986540ab3f92552882ebb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -20.5
+      value: -15.5
       objectReference: {fileID: 0}
     - target: {fileID: 495652, guid: 64cb766df09986540ab3f92552882ebb, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3473,7 +3481,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 495652, guid: 64cb766df09986540ab3f92552882ebb, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 495652, guid: 64cb766df09986540ab3f92552882ebb, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3502,7 +3510,11 @@ Prefab:
     - target: {fileID: 11408420, guid: 64cb766df09986540ab3f92552882ebb, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 242033947}
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448852, guid: 64cb766df09986540ab3f92552882ebb, type: 2}
+      propertyPath: FashFather
+      value: 
+      objectReference: {fileID: 370619061}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64cb766df09986540ab3f92552882ebb, type: 2}
   m_IsPrefabParent: 0
@@ -3807,14 +3819,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f742ce8b884754db6dd5a64f4f7c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxPolice: 10
+  maxPoliceVan: 0
+  maxCamera: 5
+  maxCatapult: 2
+  maxActivist: 15
   PolicePrefab: {fileID: 106872, guid: ed758a82c086e2246a7fbcdb8cd631cc, type: 2}
   CameraPrefab: {fileID: 118650, guid: f8e85c865c0170e4e82e64af2f04b3dc, type: 2}
   PoliceVanPrefab: {fileID: 113874, guid: a2ed3f17cf245b446b8139a0d8b17298, type: 2}
   CatapultPrefab: {fileID: 132612, guid: fb71f7ee0e3baf642b70cf3d97a094c0, type: 2}
+  ActivistPrefab: {fileID: 121670, guid: 64cb766df09986540ab3f92552882ebb, type: 2}
   policeParent: {fileID: 726188689}
   cameraParent: {fileID: 1760514374}
   policeVanParent: {fileID: 235264664}
   catapultParent: {fileID: 426793185}
+  activistParent: {fileID: 1280509123}
   status: {fileID: 1100583222}
   SelectedObject: {fileID: 0}
   Crosshair: {fileID: 601850498}
@@ -5531,6 +5550,10 @@ Prefab:
       propertyPath: Target
       value: 
       objectReference: {fileID: 242033947}
+    - target: {fileID: 180248, guid: 06d1a1df797a08e4d8e9a6ef12303482, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06d1a1df797a08e4d8e9a6ef12303482, type: 2}
   m_IsPrefabParent: 0
@@ -5912,6 +5935,10 @@ Prefab:
       propertyPath: Target
       value: 
       objectReference: {fileID: 242033947}
+    - target: {fileID: 180248, guid: 06d1a1df797a08e4d8e9a6ef12303482, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06d1a1df797a08e4d8e9a6ef12303482, type: 2}
   m_IsPrefabParent: 0
@@ -6020,6 +6047,10 @@ Prefab:
       propertyPath: Target
       value: 
       objectReference: {fileID: 1084441787}
+    - target: {fileID: 11476916, guid: 139e3752f8b11324abec4a899874d1c6, type: 2}
+      propertyPath: SpawnEvery
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 139e3752f8b11324abec4a899874d1c6, type: 2}
   m_IsPrefabParent: 0

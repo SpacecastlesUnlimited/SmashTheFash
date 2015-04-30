@@ -13,6 +13,7 @@ GameObject:
   - 23: {fileID: 2370540}
   - 195: {fileID: 19559998}
   - 114: {fileID: 11408420}
+  - 114: {fileID: 11448852}
   m_Layer: 8
   m_Name: GoodGuy
   m_TagString: GoodPerson
@@ -43,7 +44,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190384}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+  m_LocalRotation: {x: .707106888, y: 0, z: 0, w: .707106769}
   m_LocalPosition: {x: .100000001, y: 10, z: 0}
   m_LocalScale: {x: .25, y: .25, z: 1}
   m_Children: []
@@ -105,6 +106,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+--- !u!114 &11448852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0da1bb0e9ebd8048aa1da31eb5be2ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 199756, guid: bbb60655db2655c4db3a434cd07ab025, type: 2}
+  FashFather: {fileID: 0}
+  CurrentAimAt: {fileID: 0}
+  ProjectileInFlight: {fileID: 0}
+  ProjectileSpeed: 5
 --- !u!114 &11451094
 MonoBehaviour:
   m_ObjectHideFlags: 1
