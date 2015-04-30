@@ -19,6 +19,8 @@ public class Place : MonoBehaviour {
 	
 	public GameObject Crosshair;
 
+	public GameObject FashFather;
+
 	private RaycastHit hitInfo;
 	private Vector2 currentPos;
 	private Vector2 endPos;
@@ -62,6 +64,10 @@ public class Place : MonoBehaviour {
 	void PlacePrefab(GameObject prefab, Transform parent) {
 		var placed = (GameObject)Instantiate(prefab, new Vector3(hitInfo.point.x, prefab.transform.position.y, hitInfo.point.z), prefab.transform.rotation);
 		placed.transform.parent = parent;
+		var Smasher = placed.GetComponent<CatapultSmash>();
+		if (Smasher!=null) {
+			Smasher.FashFather = FashFather.transform;
+		}
 	}
 
 	void PlaceStuff() {
