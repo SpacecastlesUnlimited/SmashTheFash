@@ -43,6 +43,23 @@ public class Place : MonoBehaviour {
 	private bool placing;
 	private bool touching;
 
+	public GameObject ErrorPanel;
+	public UnityEngine.UI.Text errorPanelText;
+
+	public void ShowErrorPanel() {
+		ErrorPanel.SetActive (true);
+		Time.timeScale = 0.01f;
+	}
+
+	public void HideErrorPanel() {
+		ErrorPanel.SetActive (false);
+		Time.timeScale = 1;
+	}
+	
+	public void SetErrorPanelText(string text) {
+		errorPanelText.text = text;
+	}
+
 	// Use this for initialization
 	void Start () {
 		placing = false;
@@ -57,23 +74,39 @@ public class Place : MonoBehaviour {
 	void DonePlacing() {
 		var mouseMoved = startPos - endPos;
 		if (mouseMoved.x > 0 && mouseMoved.y < 0){
-			if (currentPolice < maxPolice) 
+			if (currentPolice < maxPolice)  {
 				PlacePrefab (PolicePrefab, policeParent);
+			} else {
+				SetErrorPanelText("Keine Polizei mehr verfügbar!");
+				ShowErrorPanel();
+			}
 			currentPolice++;
 		}
 		if (mouseMoved.x > 0 && mouseMoved.y > 0){
-			if (currentActivist < maxActivist) 
+			if (currentActivist < maxActivist)  {
 				PlacePrefab (ActivistPrefab, activistParent);
+			} else {
+				SetErrorPanelText("Keine Aktivisten mehr verfügbar!");
+				ShowErrorPanel();
+			}
 			currentActivist++;
 		}
 		if (mouseMoved.x < 0 && mouseMoved.y > 0){
-			if (currentCamera < maxCamera) 
+			if (currentCamera < maxCamera)  {
 				PlacePrefab (CameraPrefab, cameraParent);
+			} else {
+				SetErrorPanelText("Keine Medien mehr verfügbar!");
+				ShowErrorPanel();
+			}
 			currentCamera++;
 		}
 		if (mouseMoved.x < 0 && mouseMoved.y < 0){
-			if (currentCatapult < maxCatapult) 
+			if (currentCatapult < maxCatapult)  {
 				PlacePrefab (CatapultPrefab, catapultParent);
+			} else {
+				SetErrorPanelText("Keine Katapulte mehr verfügbar!");
+				ShowErrorPanel();
+			}
 			currentCatapult++;
 		}
 		placing = false;
