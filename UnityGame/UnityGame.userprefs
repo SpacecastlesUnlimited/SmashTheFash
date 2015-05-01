@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Entities\Scripts\CatapultSmash.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Globals\Scripts\LevelLoader.cs">
     <Files>
-      <File FileName="Assets\Entities\Scripts\Place.cs" Line="69" Column="45" />
-      <File FileName="Assets\Entities\Scripts\CatapultSmash.cs" Line="30" Column="117" />
-      <File FileName="Assets\Entities\Scripts\Explode.cs" Line="16" Column="33" />
+      <File FileName="Assets\Entities\Scripts\Place.cs" Line="59" Column="46" />
+      <File FileName="Assets\Entities\Scripts\CountFashists.cs" Line="14" Column="46" />
+      <File FileName="Assets\Globals\Scripts\LevelLoader.cs" Line="17" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

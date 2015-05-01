@@ -5,6 +5,8 @@ public class CountFashists : MonoBehaviour {
 
 	public GameObject FashistFather;
 
+	public GameObject WonPanel;
+
 	private UnityEngine.UI.Text text;
 
 	// Use this for initialization
@@ -16,5 +18,12 @@ public class CountFashists : MonoBehaviour {
 	void Update () {
 		var fashs = FashistFather.GetComponentsInChildren<FashNavigation> ();
 		text.text = fashs.Length.ToString();
+		if (fashs.Length <= 0)
+			Won ();
+	}
+
+	public void Won() {
+		WonPanel.SetActive (true);
+		Time.timeScale = 0.01f;
 	}
 }

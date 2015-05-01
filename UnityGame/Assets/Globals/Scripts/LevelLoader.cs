@@ -22,6 +22,7 @@ public class LevelLoader : MonoBehaviour {
 	public void LoadLevel(string LevelName) {
 		levels.Push (LevelName);
 		Application.LoadLevel (LevelName);
+		Time.timeScale = 1;
 	}
 	
 	public void GoBackLevel() {
